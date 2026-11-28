@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Qasir Nawaz Marri Baloch — BS-IT 3rd year developer. Linux enthusiast, bug-fixer, builder of web, desktop & software apps. Available for internships & freelance.">
-  <meta name="author" content="Qasir Nawaz Marri Baloch">
+  <meta name="description" content="Qasir Nawaz Marri — BS-IT 3rd year developer. Linux enthusiast, bug-fixer, builder of web, desktop & software apps. Available for internships & freelance.">
+  <meta name="author" content="Qasir Nawaz Marri">
   <meta name="theme-color" content="#05060a">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Qasir Nawaz — Developer & Linux Enthusiast">
+  <meta property="og:title" content="Qasir Nawaz Marri — IT Student & Developer">
   <meta property="og:description" content="I turn broken things into working software. BS-IT 3rd year. Linux, web, desktop.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="og-image.png">
   <meta property="og:url" content="https://qasir-nawaz.github.io/portfolio/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Qasir Nawaz — Developer & Linux Enthusiast">
+  <meta name="twitter:title" content="Qasir Nawaz Marri — IT Student & Developer">
   <meta name="twitter:description" content="I turn broken things into working software.">
   <meta name="twitter:image" content="og-image.png">
 
-  <title>Qasir Nawaz — Developer & Linux Enthusiast</title>
+  <title>Qasir Nawaz Marri — IT Student & Developer</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 
   <!-- Fonts -->
@@ -1410,6 +1410,26 @@
       .reveal { opacity: 1; transform: none; }
       .back-to-top { transition: none; }
     }
+
+
+    /* Cloud Computing portfolio additions */
+    .portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .portfolio-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+    .portfolio-card h3{font-size:1.05rem;margin-bottom:9px;color:var(--text)}
+    .portfolio-card p,.portfolio-card li{color:var(--text-soft);font-size:.9rem;line-height:1.7}
+    .portfolio-card ul{padding-left:19px}
+    .timeline{display:grid;gap:12px}
+    .timeline-item{padding:20px 22px;border-left:2px solid var(--accent-2);background:var(--surface);border-radius:0 14px 14px 0}
+    .timeline-item h3{font-size:1rem;margin-bottom:5px}
+    .timeline-item p{color:var(--text-soft);font-size:.9rem;line-height:1.65}
+    .case-study{background:linear-gradient(135deg,rgba(124,92,255,.10),rgba(34,211,238,.05));border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+    .case-study h3{margin:18px 0 7px;font-size:1rem}
+    .case-study p{color:var(--text-soft);line-height:1.7;font-size:.92rem}
+    .profile-links{display:flex;flex-wrap:wrap;gap:10px}
+    .profile-links a{padding:10px 15px;border:1px solid var(--border-2);border-radius:999px;color:var(--accent-2);font-size:.88rem}
+    .notice{padding:14px 16px;border:1px dashed var(--border-2);border-radius:12px;color:var(--text-soft);font-size:.85rem;line-height:1.6}
+    @media(max-width:640px){.portfolio-card,.case-study{padding:20px}}
+
   </style>
 </head>
 <body>
@@ -1428,10 +1448,14 @@
       </a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#objective">Objective</a>
+        <a href="#education">Education</a>
         <a href="#proof">Code</a>
         <a href="#skills">Skills</a>
         <a href="#work">Work</a>
-        <a href="blog.html">Notes</a>
+        <a href="#experience">Experience</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#case-study">Case Study</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </div>
     </nav>
@@ -1441,34 +1465,33 @@
     <!-- HERO -->
     <header class="hero">
       <div class="hero-photo-wrap reveal">
-        <img src="profile.jpg" alt="Qasir Nawaz Marri Baloch" class="hero-photo" loading="eager" onerror="this.style.display='none'; this.parentElement.style.display='none';">
+        <img src="DP.jpeg" alt="Qasir Nawaz Marri" class="hero-photo" loading="eager" onerror="this.style.display='none'; this.parentElement.style.display='none';">
       </div>
 
       <div class="hero-top reveal">
         <span class="status">
           <span class="dot" aria-hidden="true"></span>
-          Available for internships &amp; freelance
+          Open to learning and internship opportunities
         </span>
         <span class="status">📍 Pakistan</span>
-        <span class="status">🐧 Linux daily driver</span>
-        <span class="status">🚀 Learning Docker</span>
+        <span class="status">🎓 BS Information Technology</span>
+        <span class="status">💻 IT Support &amp; Development</span>
       </div>
 
       <!-- NEW HERO HEADING -->
       <h1 class="reveal">
-        Building software<br>
-        that <em>actually works</em>.
+        IT student<br>
+        building <em>useful solutions</em>.
       </h1>
 
       <div class="hero-row">
         <p class="hero-lede reveal">
-          I'm <strong>Qasir Nawaz</strong> — a 3rd year BS-IT student who lives
-          in the Linux terminal. I build web apps, desktop tools, and software.
-          When something breaks, I don't run from it — I dig in, diagnose it,
-          and fix it properly. That's the part I love most.
+          I'm <strong>Qasir Nawaz Marri</strong> — a BS Information Technology student at the University of Sindh. I am interested in
+          IT support, troubleshooting, web development, and practical software projects.
+          I enjoy learning new technologies and turning ideas into useful solutions.
         </p>
         <div class="hero-meta-block reveal">
-          <span><strong>BS-IT</strong> / 3rd Year</span>
+          <span><strong>BS-IT</strong> / Student</span>
           <span><strong>Stack</strong> / Linux · Web · Desktop</span>
           <span><strong>Status</strong> / Building in public</span>
         </div>
@@ -1547,7 +1570,7 @@
         <div class="bento-card bento-about reveal">
           <div class="bento-label">My story</div>
           <p>
-            I'm <strong>Qasir Nawaz Marri Baloch</strong>, a 3rd year BS-IT
+            I'm <strong>Qasir Nawaz Marri</strong>, a BS Information Technology
             student. My relationship with computers started with curiosity —
             I wanted to know what happens when I type a command, why a program
             crashes, how a website loads. That curiosity became a habit.
@@ -1561,7 +1584,7 @@
         </div>
         <div class="bento-card bento-edu reveal">
           <div class="bento-label">Education</div>
-          <div class="value">BS-IT · 3rd Year</div>
+          <div class="value">BS-IT Student</div>
           <div class="sub">Currently enrolled</div>
         </div>
         <div class="bento-card bento-focus reveal">
@@ -1582,6 +1605,22 @@
       </div>
     </section>
 
+    <!-- CAREER OBJECTIVE -->
+    <section class="section" id="objective">
+      <div class="section-head reveal"><div><div class="section-eyebrow">02 — Career Direction</div><h2 class="section-title">Career <em>objective</em></h2></div></div>
+      <div class="case-study reveal"><p>My objective is to develop a strong career in Information Technology by improving my practical skills in software development, IT support, networking, and cloud computing. I aim to work on real-world problems, learn from experienced professionals, and build reliable technology solutions while continuing my education.</p></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section-head reveal"><div><div class="section-eyebrow">03 — Education</div><h2 class="section-title">Academic <em>background</em></h2></div></div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><h3>BS Information Technology</h3><p>University of Sindh, Jamshoro · Currently studying</p><p>Department of Information Technology. Relevant learning areas include programming, computer systems, databases, networking, and cloud computing.</p></div>
+        <div class="timeline-item reveal"><h3>Diploma in Information Technology (DIT)</h3><p>One-year diploma · Completed</p><p>Foundational study of computer applications and information technology.</p></div>
+        <div class="timeline-item reveal"><h3>Bachelor of Arts (BA)</h3><p>Completed · 14 years of education</p><p>Academic qualification completed before current BS-IT studies.</p></div>
+      </div>
+    </section>
+
     <!-- CODE / PROOF -->
     <section class="section" id="proof">
       <div class="section-head reveal">
@@ -1597,43 +1636,36 @@
           <span class="terminal-dot red"></span>
           <span class="terminal-dot yellow"></span>
           <span class="terminal-dot green"></span>
-          <span class="terminal-title">qasir@ubuntu: ~/projects</span>
+          <span class="terminal-title">qasir@windows: ~/projects</span>
         </div>
         <div class="terminal-body">
-          <div><span class="prompt">qasir@ubuntu</span>:<span class="cmd">~/projects</span>$ ls -la</div>
+          <div><span class="prompt">qasir@windows</span>:<span class="cmd">~/projects</span>$ ls -la</div>
           <div class="out">total 20</div>
           <div class="out">drwxr-xr-x 2 qasir qasir 4096 Jan 15 10:20 .</div>
           <div class="out">drwxr-xr-x 5 qasir qasir 4096 Jan 15 09:45 ..</div>
           <div class="out">drwxr-xr-x 4 qasir qasir 4096 Jan 14 18:30 portfolio</div>
-          <div class="out">drwxr-xr-x 3 qasir qasir 4096 Jan 12 14:15 cloud-practice</div>
-          <div class="out">drwxr-xr-x 2 qasir qasir 4096 Jan 15 10:18 bug-fixes</div>
-          <div><span class="prompt">qasir@ubuntu</span>:<span class="cmd">~/projects</span>$ git status</div>
+          <div class="out">drwxr-xr-x 3 qasir qasir 4096 Jan 12 14:15 bijlisos</div>
+          <div class="out">drwxr-xr-x 2 qasir qasir 4096 Jan 15 10:18 learning-projects</div>
+          <div><span class="prompt">qasir@windows</span>:<span class="cmd">~/projects</span>$ git status</div>
           <div class="out">On branch main</div>
           <div class="out">Your branch is up to date with 'origin/main'.</div>
           <div class="out">nothing to commit, working tree clean</div>
-          <div><span class="prompt">qasir@ubuntu</span>:<span class="cmd">~/projects</span>$ <span class="comment"># still learning, still shipping</span></div>
+          <div><span class="prompt">qasir@windows</span>:<span class="cmd">~/projects</span>$ <span class="comment"># still learning, still shipping</span></div>
         </div>
       </div>
 
       <div class="code-section">
         <div class="code-block reveal">
           <div class="code-head">
-            <span>cleanup.py</span>
+            <span>basics.py</span>
             <span class="lang">Python</span>
           </div>
-          <div class="code-body"><pre><code><span class="c"># Clean up old files in ~/Downloads</span>
-<span class="k">import</span> os, time
-
-<span class="k">def</span> <span class="f">clean_old</span>(path, days=<span class="n">30</span>):
-    now = time.time()
-    <span class="k">for</span> f <span class="k">in</span> os.listdir(path):
-        fp = os.path.join(path, f)
-        <span class="k">if</span> os.path.getmtime(fp) &lt; now - days * <span class="n">86400</span>:
-            os.remove(fp)
-            <span class="f">print</span>(<span class="s">f"Removed: {f}"</span>)
-
-<span class="k">if</span> __name__ == <span class="s">"__main__"</span>:
-    <span class="f">clean_old</span>(os.path.expanduser(<span class="s">"~/Downloads"</span>))</code></pre></div>
+          <div class="code-body"><pre><code><span class="c"># A simple beginner-level example</span>
+<span class="n">budget</span> = <span class="n">500</span>
+<span class="k">if</span> budget &gt;= <span class="n">500</span>:
+    <span class="f">print</span>(<span class="s">"You can book the service."</span>)
+<span class="k">else</span>:
+    <span class="f">print</span>(<span class="s">"Please review your budget."</span>)</code></pre></div>
         </div>
 
         <div class="code-block reveal">
@@ -1667,70 +1699,14 @@
       </div>
 
       <div class="skills-grid">
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">Linux &amp; Ubuntu</div>
-            <div class="skill-level">Strong</div>
-          </div>
-          <div class="skill-desc">Terminal, shell, packages, system troubleshooting.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="90%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">Bug Fixing</div>
-            <div class="skill-level">Strong</div>
-          </div>
-          <div class="skill-desc">Diagnosing software &amp; system issues end-to-end.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="88%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">HTML</div>
-            <div class="skill-level">Advanced</div>
-          </div>
-          <div class="skill-desc">Semantic markup and accessible structure.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="92%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">CSS</div>
-            <div class="skill-level">Advanced</div>
-          </div>
-          <div class="skill-desc">Responsive layouts, Flexbox, Grid, animations.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="88%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">Python</div>
-            <div class="skill-level">Intermediate</div>
-          </div>
-          <div class="skill-desc">Scripting, automation, desktop utilities.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="75%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">JavaScript</div>
-            <div class="skill-level">Intermediate</div>
-          </div>
-          <div class="skill-desc">Dynamic UI, DOM manipulation, ES6+.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="72%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">Desktop Apps</div>
-            <div class="skill-level">Intermediate</div>
-          </div>
-          <div class="skill-desc">Building &amp; packaging desktop applications.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="68%"></div></div>
-        </div>
-        <div class="skill reveal">
-          <div class="skill-top">
-            <div class="skill-name">Git &amp; GitHub</div>
-            <div class="skill-level">Intermediate</div>
-          </div>
-          <div class="skill-desc">Version control, branching, GitHub Pages.</div>
-          <div class="skill-bar"><div class="skill-bar-fill" data-fill="78%"></div></div>
-        </div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">IT Troubleshooting</div><div class="skill-level">Good</div></div><div class="skill-desc">Basic diagnosis of Windows, software, and common computer issues.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="75%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">HTML &amp; CSS</div><div class="skill-level">Working knowledge</div></div><div class="skill-desc">Creating web pages, styling layouts, and responsive design basics.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="65%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">Python</div><div class="skill-level">Basic</div></div><div class="skill-desc">Fundamentals, variables, operators, conditions, and beginner logic.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="40%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">Flutter &amp; Dart</div><div class="skill-level">Learning</div></div><div class="skill-desc">Building and testing a Flutter application with API integration.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="40%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">JavaScript</div><div class="skill-level">Beginner</div></div><div class="skill-desc">Learning core syntax and basic web interactivity.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="30%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">C++</div><div class="skill-level">Learning</div></div><div class="skill-desc">Practising programming fundamentals and problem-solving.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="30%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">Git &amp; GitHub</div><div class="skill-level">Basic</div></div><div class="skill-desc">Basic repository workflow and source-code management.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="35%"></div></div></div>
+        <div class="skill reveal"><div class="skill-top"><div class="skill-name">n8n Automation</div><div class="skill-level">Learning</div></div><div class="skill-desc">Exploring webhook-based workflows and AI-assisted automation.</div><div class="skill-bar"><div class="skill-bar-fill" data-fill="35%"></div></div></div>
       </div>
     </section>
 
@@ -1759,8 +1735,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </div>
           <div>
-            <h3>Linux Basics</h3>
-            <p>Self-taught · Ongoing</p>
+            <h3>DIT — Diploma in Information Technology</h3>
+            <p>One-year diploma · Completed</p>
           </div>
         </div>
         <div class="cert reveal">
@@ -1768,8 +1744,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
           <div>
-            <h3>Python for Everybody</h3>
-            <p>Coursera · Ongoing</p>
+            <h3>Artificial Intelligence Course</h3>
+            <p>Course completed · Certificate details can be added when verified</p>
           </div>
         </div>
       </div>
@@ -1779,70 +1755,155 @@
     <section class="section" id="work">
       <div class="section-head reveal">
         <div>
-          <div class="section-eyebrow">05 — Work</div>
+          <div class="section-eyebrow">06 — Work</div>
           <h2 class="section-title">Selected <em>projects</em></h2>
         </div>
-        <div class="section-note">02 shipped · more coming</div>
+        <div class="section-note">10 projects · development and practice</div>
       </div>
 
       <div class="projects">
         <article class="project reveal">
-          <div class="project-image">
-            <img src="screenshot-portfolio.png" alt="Portfolio project screenshot" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="project-image-placeholder" style="display:none;">
-              📸 Add screenshot<br><small>screenshot-portfolio.png</small>
-            </div>
-          </div>
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🌐<br><small>Portfolio website</small></div></div>
           <div class="project-num">001 / Web</div>
-          <h3>Personal Portfolio</h3>
-          <p>
-            A responsive single-page portfolio built with HTML and CSS,
-            deployed on GitHub Pages. Modern layout, hover animations, dark
-            mode, and clean semantics. This site you're looking at.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">Pages</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link" href="https://qasir-nawaz.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
-              Live demo
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6"/></svg>
-            </a>
-            <a class="project-link" href="https://github.com/qasir-nawaz/portfolio" target="_blank" rel="noopener noreferrer">
-              Source code
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6"/></svg>
-            </a>
-          </div>
+          <h3>Portfolio</h3>
+          <p>A personal portfolio website presenting my profile, learning journey, technical skills, and project work.</p>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/portfolio" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
         </article>
 
         <article class="project reveal">
-          <div class="project-image">
-            <img src="screenshot-cloud.png" alt="Cloud practice screenshot" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="project-image-placeholder" style="display:none;">
-              📸 Add screenshot<br><small>screenshot-cloud.png</small>
-            </div>
-          </div>
-          <div class="project-num">002 / Cloud</div>
-          <h3>Cloud Deployment Practice</h3>
-          <p>
-            Deploying static sites and small apps to the cloud using GitHub
-            Pages and Linux-based hosting — practising Git workflows and
-            server configuration.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Linux</span>
-            <span class="tag">Cloud</span>
-            <span class="tag">Git</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link" href="https://github.com/qasir-nawaz/cloud-practice" target="_blank" rel="noopener noreferrer">
-              Source code
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6"/></svg>
-            </a>
-          </div>
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🐍<br><small>Python task collection</small></div></div>
+          <div class="project-num">002 / Python · Practice</div>
+          <h3>CodeAlpha Python Tasks</h3>
+          <p>A collection of Python tasks completed as part of programming practice and the CodeAlpha learning experience.</p>
+          <div class="project-tags"><span class="tag">Python</span><span class="tag">Programming</span><span class="tag">CodeAlpha</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/CodeAlpha_Python_Tasks" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
         </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🤖<br><small>AI interview practice</small></div></div>
+          <div class="project-num">003 / AI · Web Tool</div>
+          <h3>Technify — AI Interview Question Generator</h3>
+          <p>A project designed to help users generate interview-preparation questions with an AI-focused workflow.</p>
+          <div class="project-tags"><span class="tag">AI</span><span class="tag">Web</span><span class="tag">Interview Preparation</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/Technify-AI-Interview-Question-Generator" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🎵<br><small>Music player</small></div></div>
+          <div class="project-num">004 / Application</div>
+          <h3>CodeAlpha MusicPlayer</h3>
+          <p>A music-player application project built as part of practical coding and application-development work.</p>
+          <div class="project-tags"><span class="tag">Application</span><span class="tag">CodeAlpha</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/CodeAlpha_MusicPlayer" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🖼️<br><small>Gallery application</small></div></div>
+          <div class="project-num">005 / Application</div>
+          <h3>CodeAlpha CyberGallery</h3>
+          <p>A gallery-themed application project completed as part of hands-on programming practice.</p>
+          <div class="project-tags"><span class="tag">Application</span><span class="tag">Gallery</span><span class="tag">CodeAlpha</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/CodeAlpha_CyberGallery" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">☁️<br><small>Cloud computing portfolio</small></div></div>
+          <div class="project-num">006 / Cloud Computing</div>
+          <h3>Cloud Computing Portfolio</h3>
+          <p>A portfolio project for cloud-computing coursework, showcasing my IT profile, skills, and projects.</p>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Cloud Computing</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/Cloud_Computing-Portfolio" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">💻<br><small>C++ task collection</small></div></div>
+          <div class="project-num">007 / C++ · Practice</div>
+          <h3>InternGrow C++ Tasks</h3>
+          <p>A collection of C++ practice tasks completed to strengthen programming fundamentals and problem-solving skills.</p>
+          <div class="project-tags"><span class="tag">C++</span><span class="tag">Programming</span><span class="tag">InternGrow</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/interngrow-cpp-tasks" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🧮<br><small>Calculator</small></div></div>
+          <div class="project-num">008 / Application</div>
+          <h3>CodeAlpha Calculator</h3>
+          <p>A calculator application created as a coding task, applying programming logic to a simple utility.</p>
+          <div class="project-tags"><span class="tag">Programming</span><span class="tag">Calculator</span><span class="tag">CodeAlpha</span></div>
+          <div class="project-links"><a class="project-link" href="https://github.com/qasir-nawaz/CodeAlpha_Calculator" target="_blank" rel="noopener noreferrer">Source code ↗</a></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">⚡<br><small>Electrician service platform</small></div></div>
+          <div class="project-num">009 / Flutter · Backend · IN DEVELOPMENT</div>
+          <h3>BijliSOS</h3>
+          <p>An on-demand electrician service platform concept. Customers can describe an electrical issue and budget, while nearby electricians can respond with offers. The Flutter interface and FastAPI backend are under development.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span></div>
+          <div class="project-links"><span class="project-link">Personal project · In development</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-image"><div class="project-image-placeholder" style="display:flex;">🍽️<br><small>AI voice-ordering workflow</small></div></div>
+          <div class="project-num">010 / AI Automation · PROTOTYPE</div>
+          <h3>Smart Restaurant — Voice Ordering</h3>
+          <p>A prototype workflow for handling restaurant voice orders. It connects a webhook, AI processing, order formatting, Google Sheets, and receipt generation to explore an automated ordering process.</p>
+          <div class="project-tags"><span class="tag">n8n</span><span class="tag">Webhook</span><span class="tag">Gemini</span><span class="tag">Google Sheets</span></div>
+          <div class="project-links"><span class="project-link">Workflow prototype · Personal practice</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECT CASE STUDY -->
+    <section class="section" id="case-study">
+      <div class="section-head reveal"><div><div class="section-eyebrow">07 — Featured Project</div><h2 class="section-title">Project <em>case study</em></h2></div></div>
+      <div class="case-study reveal">
+        <div class="project-num">FEATURED · IN DEVELOPMENT</div><h3>BijliSOS — On-demand electrician service platform</h3>
+        <p><strong>Problem:</strong> Customers may find it difficult to locate an available electrician and agree on a service price.</p>
+        <p><strong>Proposed solution:</strong> A platform concept where customers describe an electrical issue and budget, nearby electricians can respond with offers, and the customer can choose a suitable offer.</p>
+        <p><strong>My role:</strong> Student project developer working on the Flutter interface and FastAPI backend.</p>
+        <p><strong>Technology:</strong> Flutter, Dart, Python, FastAPI, PostgreSQL, SQLAlchemy, and Alembic.</p>
+        <p><strong>Learning and challenges:</strong> Connecting a frontend to REST APIs, designing database models, implementing authentication, and testing backend endpoints.</p>
+        <p><strong>Outcome:</strong> The project is under development; production release and real customer usage are not claimed.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TRAINING -->
+    <section class="section" id="experience">
+      <div class="section-head reveal"><div><div class="section-eyebrow">08 — Experience & Training</div><h2 class="section-title">Academic <em>experience</em></h2></div></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card reveal"><h3>Academic Lab Practice</h3><p>Hands-on coursework and practical exercises in Information Technology, including cloud computing lab activities.</p></article>
+        <article class="portfolio-card reveal"><h3>Personal Development Projects</h3><p>Independent practice in building web interfaces, troubleshooting software issues, and learning backend development.</p></article>
+        <article class="portfolio-card reveal"><h3>Professional Training</h3><p>Continuing to build practical IT knowledge through structured learning and technology courses. Specific credentials are listed only when verified.</p></article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <div class="section-head reveal"><div><div class="section-eyebrow">10 — Achievements</div><h2 class="section-title">Learning <em>milestones</em></h2></div></div>
+      <div class="notice reveal">No formal awards or competition placements are being claimed at this time. This section can be updated when a verifiable achievement is available.</div>
+    </section>
+
+    <!-- CV -->
+    <section class="section" id="resume">
+      <div class="section-head reveal"><div><div class="section-eyebrow">11 — Resume</div><h2 class="section-title">Professional <em>CV</em></h2></div></div>
+      <div class="case-study reveal"><p>A current PDF resume will be provided here. Add your verified CV file to the same website folder and name it <strong>resume.pdf</strong>.</p><div class="hero-actions" style="margin-top:18px"><a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">View / Download CV (add resume.pdf)</a></div></div>
+    </section>
+
+    <!-- PROFESSIONAL PROFILES -->
+    <section class="section" id="profiles">
+      <div class="section-head reveal"><div><div class="section-eyebrow">12 — Professional Profiles</div><h2 class="section-title">Find me <em>online</em></h2></div></div>
+      <div class="profile-links reveal"><a href="https://github.com/qasir-nawaz" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/qasir-nawaz" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:qasirnawaz690@gmail.com">Email ↗</a></div>
+    </section>
+
+    <!-- SERVICES / SPECIALIZATIONS / SOFT SKILLS -->
+    <section class="section" id="professional">
+      <div class="section-head reveal"><div><div class="section-eyebrow">15–28 — Additional Profile</div><h2 class="section-title">Interests & <em>working style</em></h2></div></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card reveal"><h3>Areas of Interest</h3><ul><li>IT support and troubleshooting</li><li>Web development</li><li>Cloud computing fundamentals</li><li>Database and backend development</li></ul></article>
+        <article class="portfolio-card reveal"><h3>Current Specializations</h3><ul><li>Software and system troubleshooting</li><li>Python fundamentals</li><li>Flutter application development</li><li>Linux and command-line practice</li></ul></article>
+        <article class="portfolio-card reveal"><h3>Tools & Working Process</h3><ul><li>Visual Studio Code</li><li>Git and GitHub</li><li>PowerShell / Command Prompt</li><li>Testing, debugging, and documentation</li></ul></article>
+        <article class="portfolio-card reveal"><h3>Soft Skills & Languages</h3><ul><li>Problem-solving</li><li>Independent learning</li><li>Technical research</li><li>Languages: Sindhi, Urdu, and basic English</li></ul></article>
       </div>
     </section>
 
@@ -1856,37 +1917,8 @@
         <div class="section-note">Recommendations</div>
       </div>
 
-      <div class="testimonials">
-        <div class="testimonial reveal">
-          <p>
-            Qasir is one of the most curious students I've taught. He doesn't
-            just want the answer — he wants to understand why. That's rare.
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">P</div>
-            <div class="testimonial-author-info">
-              <strong>Prof. XYZ</strong>
-              <span>BS-IT Department</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial reveal">
-          <p>
-            I asked him to fix a broken Linux install. He didn't just fix it —
-            he explained every command he ran and why. That's how you know
-            someone actually understands it.
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">A</div>
-            <div class="testimonial-author-info">
-              <strong>Classmate</strong>
-              <span>BS-IT · 3rd Year</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="notice reveal">Recommendations and testimonials will be added here only when genuine feedback is available and permission has been granted.</div>
+   </section>
 
     <!-- CONTACT -->
     <section class="section" id="contact">
@@ -1905,6 +1937,8 @@
           <a href="mailto:qasirnawaz690@gmail.com?subject=Hello%20Qasir%20%E2%80%94%20Portfolio%20Inquiry">email</a>
           using the buttons below.
         </div>
+
+        <div class="contact-direct"><strong>Contact:</strong> <a href="mailto:qasirnawaz690@gmail.com">qasirnawaz690@gmail.com</a> · Pakistan</div>
 
         <div class="contact-actions">
           <a class="btn btn-wa" href="https://wa.me/923705704570?text=Hi%20Qasir%2C%20I%20saw%20your%20portfolio." target="_blank" rel="noopener noreferrer">
@@ -1930,7 +1964,7 @@
   </main>
 
   <footer>
-    <div>© 2025 Qasir Nawaz Marri Baloch</div>
+    <div>© 2026 Qasir Nawaz Marri</div>
     <div class="footer-social">
       <a href="https://github.com/qasir-nawaz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
